@@ -1,0 +1,119 @@
+// Top Bar
+#top-bar {
+    height: $var * 6;
+    background: _palette(blue-light);
+    overflow: hidden;
+    color: _palette(white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#logo {
+    text-align: center;
+    background: url('/src/images/igniter-logo-white.svg') no-repeat 50% 50%;
+    text-indent: -99999999px;
+}
+
+
+// Slider
+section.slider {
+    position: relative;
+    .overlay {
+        background: _palette(overlay);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+    .slide {
+        height: 509px;
+        display: none;
+        background: url('/src/images/hero-img.jpg') 50% 50%;
+        background-size: cover;
+        &.active {
+            display: flex;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: $slider-fs;
+            color: _palette(white);
+            z-index: 998;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;       
+            margin-top: 20%;     
+        }
+    }
+}
+
+// Checkerboard
+#checkers {
+    opacity: 0;
+    padding-bottom: 0px;
+}
+ul.checkerboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+        flex: 1 1 50%;
+        margin-bottom: $var*3;
+        background: url('/src/images/page-icon.svg');
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        min-height: $var*6;
+        padding: 0px $var*5;
+        box-sizing: border-box;
+    }
+}
+div.tidbit {
+    padding: $var*10 0px $var*5;
+    background: url('/src/images/slanted-gradient-background.svg');
+    background-size: cover;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: _palette(white);
+    text-align: center;
+}
+
+// Stats/Percents
+#percents {
+    background: _palette(white);
+    figure {
+        margin: $var*3 auto;
+    }
+    p {
+        color: _palette(orange-dark);
+        margin-bottom: $var*3;
+    }
+}
+.percent {
+    font-weight: bold;
+    font-size: $percent-fs;
+    letter-spacing: 2px;
+    line-height: initial;
+}
+
+// Showcase
+.showcase-text {
+    box-sizing: border-box;
+    padding-left: $var*4;
+}
+
+// Thanks
+div.tidbit2 {
+    padding: $var*5 $var*10;
+    background: linear-gradient(180deg, #1676DD, #0C4078);
+    font-size: 2em;
+    line-height: 1.2em;
+    color: _palette(white);
+    text-align: center;
+}

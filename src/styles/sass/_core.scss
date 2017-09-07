@@ -1,0 +1,82 @@
+body {
+    background: _palette(bg);
+    font-family: $font-fam;
+    font-size: 14px;
+    line-height: 20px;
+    .band {
+        padding: $var*6 0px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow: auto;
+    line-height: initial;
+}
+
+figure {
+    margin: 0px;
+}
+
+h2 {
+    font-size: 28px;
+    color: _palette(blue-dark);
+    font-weight: normal;
+    &.title {
+        @extend .center;
+        text-transform: uppercase;
+        margin: $var*6 auto;
+        strong {
+            color: _palette(orange-dark);
+        }
+    }
+}
+
+h3 {
+    font-size: 20px;
+    color: -palette(orange-light);
+    letter-spacing: 2px;
+}
+
+button {
+    background: _palette(orange-gradient);
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #666;
+    color: #fff;
+    cursor: pointer;
+    font-family: $font-fam;
+    font-size: 16px;
+    height: $var * 4;
+    letter-spacing: 2px;
+    line-height: $var * 4;
+    min-width: $var * 21.5;
+    overflow: hidden;
+    position: relative;
+    margin: $var*3 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.fadeIn {
+    opacity: 0;
+}
+
+.slant {
+    &:before {
+        display: block;
+        content: " ";
+        width: 100%; 
+        height: 100px; 
+        background-color: #fff;
+        background: linear-gradient(4deg, _palette(blue-light) 50%, 50%, _palette(bg));
+    }
+}
+
+@media (max-width: 736px) {
+    .reverse-col {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

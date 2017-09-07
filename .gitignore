@@ -1,3 +1,5 @@
-node_modules
+node_modules/
 .DS_Store
 dist/
+src/styles/.sass-cache/*
+src/styles/main.css.*

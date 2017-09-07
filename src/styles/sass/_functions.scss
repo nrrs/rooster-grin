@@ -1,0 +1,4 @@
+// access palette
+@function _palette($keys...) {
+	@return map-get($palette, $keys...);
+}

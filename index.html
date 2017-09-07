@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Rooster Grin Front End Dev Test</title>
-    <link rel="stylesheet" href="/styles/main.css">
-  </head>
-  <body>
+</head>
 
-    <pre>
-      <h1>Hello World</h1>
-    </pre>
+<body>
 
-    <script type="text/javascript" src="bundle.js"></script>
-  </body>
+    <header id="top-bar">
+        <div class="container">
+            <h1 id="logo">LiftIgniter</h1>
+        </div>
+    </header>
+
+    <section id="front-slider" class="_slider">
+        <div class="overlay">&nbsp;</div>
+        <section class="regular slider">
+            <div>
+                <img src="http://placehold.it/350x300?text=1">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=2">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=3">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=4">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=5">
+            </div>
+            <div>
+                <img src="http://placehold.it/350x300?text=6">
+            </div>
+        </section>
+        <div id="slide-1" class="slide active">
+            <div class="container">
+                <h2>Carousel Slide 1</h2>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div id="slide-2" class="slide">
+            <h2>Carousel Slide 2</h2>
+            <button>Do More</button>
+        </div>
+
+        <div id="slide-3" class="slide">
+            <h2>Carousel Slide 3</h2>
+            <button>Help More</button>
+        </div>
+    </section>
+
+    <section id="checkers" class="band">
+        <div class="container">
+            <ul class="checkerboard">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            </ul>
+        </div>
+        <div class="tidbit">
+            <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus venenatis est. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vel risus magna.</p>
+        </div>
+    </section>
+
+    <section id="cta" class="band container fadeIn">
+        <h2 class="title "><strong>Lorem</strong> Ipsum</h2>
+        <div class="row">
+            <div class="6u 12u(xsmall)">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio. Ut vel auctor mauris. Suspendisse ornare vel lectus faucibus consectetur. Quisque accumsan elementum mi, in blandit mauris sodales quis. Sed consequat nisl non
+                    mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio. Ut vel auctor mauris. Suspendisse ornare vel lectus faucibus consectetur. Quisque accumsan elementum mi, in blandit mauris sodales quis. Sed consequat
+                    nisl non mauris.
+                </p>
+            </div>
+            <div class="6u 12u(xsmall) center">
+                <button>Button</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="percents" class="band fadeIn">
+        <div class="container">
+            <div class="row center">
+                <figure class="4u 12u(xsmall)">
+                    <span class="percent">240%</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
+                </figure>
+                <figure class="4u 12u(xsmall)">
+                    <span class="percent">105%</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
+                </figure>
+                <figure class="4u 12u(xsmall)">
+                    <span class="percent">159%</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="showcase" class="band fadeIn">
+        <h2 class="title"><strong>Lorem</strong> Ipsum</h2>
+        <div class="row ">
+            <img class="6u 12u(small)" src="/src/images/img1.jpg" />
+            <div class="4u 12u(small) showcase-text">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h3>Nulla a cursus odio.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio. Ut vel auctor mauris. Suspendisse ornare vel lectus faucibus consectetur. Quisque accumsan elementum mi, in blandit mauris sodales quis.</p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="row reverse-col">
+            <div class="4u -2u 12u(small) showcase-text">
+                <h2>Something about this</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio. Ut vel auctor mauris. Suspendisse ornare vel lectus faucibus consectetur. Quisque accumsan elementum mi, in blandit mauris sodales quis.</p>
+            </div>
+            <img class="6u 12u(small)" src="/src/images/img2.jpg" />
+        </div>
+    </section>
+
+    <section id="thanks" class="slant">
+        <div class="tidbit2">
+            <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus venenatis est. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vel risus magna.</p>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript " src="src/vendor/skel.min.js "></script>
+    <script type="text/javascript " src="src/vendor/skel-layout.min.js "></script>
+    <script type="text/javascript " src="bundle.js "></script>
+</body>
+
 </html>
