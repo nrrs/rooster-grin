@@ -37,10 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Modal Envelope
     $('#mail').on('click', () => {
         $('#overlay').show();
+        $('body').css({
+            "overflow": "hidden"
+        });
     });
 
     $('#overlay').on('click', () => {
         $('#overlay').hide();
+        $('body').css({
+            "overflow": "auto"
+        });
     });
 
     // On scroll
