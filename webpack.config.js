@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const watch = (process.env.NODE_ENV !== 'production');
+
 module.exports = {
     context: __dirname,
     entry: './src/app.js',
@@ -9,7 +11,7 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-    watch: true,
+    watch: watch,
 
     devServer: {
         inline: true
