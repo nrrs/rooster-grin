@@ -1,0 +1,23 @@
+// Color Scheme
+$palette: (
+    bg:                 #fafafa,
+    orange-light:       #F7931D,
+    orange-dark:        #F36819,
+    blue-light:         #1676DD,
+    blue-dark:          #283647,
+    white:              #fff,
+    orange-gradient:    linear-gradient(90deg, #F36819, #F7931D 50%, #FBC98E),
+    blue-gradient:      linear-gradient(90deg, #1676DD, #0C4078),
+    overlay:            linear-gradient(90deg, #F36819, #000)
+);
+
+// Rhythm
+$var: 10px;
+
+// Font
+$font-fam: 'Roboto', sans-serif;
+
+// Slider
+$slider-fs: 48px;
+$percent-fs: 55px;
+

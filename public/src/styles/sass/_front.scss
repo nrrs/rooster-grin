@@ -1,0 +1,97 @@
+// Top Bar
+.top-bar {
+    height: $var*6;
+    background: _palette(blue-light);
+    overflow: hidden;
+    color: _palette(white);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#logo {
+    text-align: center;
+    background: url('/src/images/igniter-logo-white.svg') no-repeat 50% 50%;
+    text-indent: -999999px;
+}
+
+// Checkerboard
+#checkers {
+    opacity: 0;
+    padding-bottom: 0px;
+    margin-top: $var*6;
+}
+ul.checkerboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+        flex: 1 1 50%;
+        margin-bottom: $var*3;
+        background: url('/src/images/page-icon.svg');
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        min-height: $var*6;
+        padding: 0px $var*5;
+        box-sizing: border-box;
+        @media (max-width: 480px) {
+            flex: 1 1 100%;
+            padding: 0px $var 0px $var*5;
+        }
+    }
+}
+div.tidbit {
+    padding: $var*10 0px $var*5;
+    background: url('/src/images/slanted-gradient-background.svg');
+    background-size: cover;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: _palette(white);
+    text-align: center;
+}
+
+// Stats/Percents
+#percents {
+    background: _palette(white);
+    figure {
+        margin: $var*3 auto;
+    }
+    p {
+        color: _palette(orange-dark);
+        margin-bottom: $var*3;
+    }
+}
+.percent {
+    font-weight: bold;
+    font-size: $percent-fs;
+    letter-spacing: 2px;
+    line-height: initial;
+}
+
+// Showcase
+.showcase-text {
+    box-sizing: border-box;
+    padding: 0px 20px 0px 40px;
+    h2 {
+        color: _palette(orange-dark);
+        margin-bottom: 0px;
+    }
+    h3 {
+        margin: 0;
+    }
+}
+
+// Thanks
+div.tidbit2 {
+    padding: $var*5 $var*10;
+    background: linear-gradient(180deg, #1676DD, #0C4078);
+    font-size: 2em;
+    line-height: 1.2em;
+    color: _palette(white);
+    text-align: center;
+}
