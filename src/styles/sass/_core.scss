@@ -56,6 +56,19 @@ button {
     z-index: 998;
 }
 
+label {
+    padding: $var;
+}
+
+textarea,
+input[type="text"] {
+    width: 100%;
+    margin: $var;
+    border: 0px;
+    border-radius: 5px;
+    padding: $var;
+}
+
 .center {
     text-align: center;
 }

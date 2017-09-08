@@ -18,6 +18,48 @@
     text-indent: -999999px;
 }
 
+// Overlay
+div#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    overflow: hidden;
+    
+    justify-content: center;
+    align-items: center;
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+        flex-direction: column;
+        h2 {
+            color: _palette(orange-light);
+            text-align: center;
+        }
+    }
+}
+
+// Envelope
+#mail {
+    background: #F7931D url(/src/images/envelope-icon.svg) no-repeat 50% 50%;
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    z-index: 999;
+    text-indent: -999999px;
+    cursor: pointer;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px 5px;
+    box-shadow: -1px 1px 2px #666;
+}
+
 // Checkerboard
 #checkers {
     opacity: 0;
