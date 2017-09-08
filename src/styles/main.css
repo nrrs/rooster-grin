@@ -20,7 +20,7 @@ button:before {
   top: 50%;
   transform: translate(-50%, -50%); }
 
-button:focus:not(:active)::before {
+button:focus:not(:active):not(.slick-arrow)::before {
   animation: ripple 1s ease-out; }
 
 body {
@@ -68,7 +68,8 @@ button {
   min-width: 215px;
   overflow: hidden;
   position: relative;
-  margin: 30px 0; }
+  margin: 30px 0;
+  z-index: 998; }
 
 .center, h2.title {
   text-align: center; }
@@ -88,7 +89,7 @@ button {
   .reverse-col {
     display: flex;
     flex-direction: column-reverse; } }
-#top-bar {
+.top-bar {
   height: 60px;
   background: #1676DD;
   overflow: hidden;
@@ -96,7 +97,7 @@ button {
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   top: 0;
   left: 0;
   right: 0; }
@@ -104,37 +105,12 @@ button {
 #logo {
   text-align: center;
   background: url("/src/images/igniter-logo-white.svg") no-repeat 50% 50%;
-  text-indent: -99999999px; }
-
-section.slider {
-  position: relative; }
-  section.slider .overlay {
-    background: linear-gradient(90deg, #F36819, #000);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3; }
-  section.slider .slide {
-    height: 509px;
-    display: none;
-    background: url("/src/images/hero-img.jpg") 50% 50%;
-    background-size: cover; }
-    section.slider .slide.active {
-      display: flex; }
-    section.slider .slide h2 {
-      font-weight: bold;
-      font-size: 48px;
-      color: #fff;
-      z-index: 998; }
-    section.slider .slide .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 20%; }
+  text-indent: -999999px; }
 
 #checkers {
   opacity: 0;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  margin-top: 60px; }
 
 ul.checkerboard {
   display: flex;
@@ -151,6 +127,10 @@ ul.checkerboard {
     min-height: 60px;
     padding: 0px 50px;
     box-sizing: border-box; }
+    @media (max-width: 480px) {
+      ul.checkerboard li {
+        flex: 1 1 100%;
+        padding: 0px 10px 0px 50px; } }
 
 div.tidbit {
   padding: 100px 0px 50px;
@@ -186,5 +166,74 @@ div.tidbit2 {
   line-height: 1.2em;
   color: #fff;
   text-align: center; }
+
+#front-slider {
+  position: relative;
+  margin-top: 60px; }
+  #front-slider .slide {
+    height: 509px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #front-slider .slide:after {
+      display: flex;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(90deg, #F36819, #000);
+      opacity: 0.3; }
+    #front-slider .slide .container {
+      display: block;
+      align-items: center;
+      margin-top: 10%;
+      position: absolute; }
+      @media (max-width: 680px) {
+        #front-slider .slide .container {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center; } }
+    #front-slider .slide h2 {
+      position: relative;
+      font-weight: bold;
+      font-size: 48px;
+      color: #fff;
+      z-index: 998;
+      margin: 0px; }
+
+button.slick-arrow {
+  position: absolute;
+  background: transparent;
+  box-shadow: none;
+  height: 100%;
+  width: 50%;
+  margin: 0; }
+  button.slick-arrow:hover {
+    background: rgba(255, 255, 255, 0.15); }
+  button.slick-arrow.slick-prev {
+    left: 0;
+    text-align: left; }
+  button.slick-arrow.slick-next {
+    right: 0;
+    text-align: right; }
+
+ul.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -90px;
+  width: 100%; }
+  ul.pagination li {
+    margin: 10px; }
+    ul.pagination li button {
+      background: transparent;
+      min-width: 0px;
+      width: 10px;
+      height: 10px; }
+    ul.pagination li.slick-active button {
+      background: #283647; }
 
 /*# sourceMappingURL=main.css.map */

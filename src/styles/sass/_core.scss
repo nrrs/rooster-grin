@@ -53,6 +53,7 @@ button {
     overflow: hidden;
     position: relative;
     margin: $var*3 0;
+    z-index: 998;
 }
 
 .center {

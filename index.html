@@ -3,55 +3,47 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rooster Grin Front End Dev Test</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css" />
 </head>
 
 <body>
 
-    <header id="top-bar">
+    <header class="top-bar">
         <div class="container">
             <h1 id="logo">LiftIgniter</h1>
         </div>
     </header>
 
-    <section id="front-slider" class="_slider">
-        <div class="overlay">&nbsp;</div>
+    <section id="front-slider" class="">
+        <!-- <div class="overlay">&nbsp;</div> -->
         <section class="regular slider">
-            <div>
-                <img src="http://placehold.it/350x300?text=1">
+
+            <div id="slide-1" class="slide">
+                <img src="/src/images/hero-img.jpg" />
+                <div class="container">
+                    <h2>Carousel Slide 1</h2>
+                    <button>Learn More</button>
+                </div>
             </div>
-            <div>
-                <img src="http://placehold.it/350x300?text=2">
+
+            <div id="slide-2" class="slide">
+                <img src="/src/images/hero-img2.jpg"   />
+                <div class="container">
+                    <h2>Carousel Slide 2</h2>
+                    <button>Do More</button>
+                </div>
             </div>
-            <div>
-                <img src="http://placehold.it/350x300?text=3">
-            </div>
-            <div>
-                <img src="http://placehold.it/350x300?text=4">
-            </div>
-            <div>
-                <img src="http://placehold.it/350x300?text=5">
-            </div>
-            <div>
-                <img src="http://placehold.it/350x300?text=6">
+
+            <div id="slide-3" class="slide">
+                <img src="/src/images/hero-img3.jpg" />
+                <div class="container">
+                    <h2>Carousel Slide 3</h2>
+                    <button>Help More</button>
+                </div>
             </div>
         </section>
-        <div id="slide-1" class="slide active">
-            <div class="container">
-                <h2>Carousel Slide 1</h2>
-                <button>Learn More</button>
-            </div>
-        </div>
-
-        <div id="slide-2" class="slide">
-            <h2>Carousel Slide 2</h2>
-            <button>Do More</button>
-        </div>
-
-        <div id="slide-3" class="slide">
-            <h2>Carousel Slide 3</h2>
-            <button>Help More</button>
-        </div>
     </section>
 
     <section id="checkers" class="band">
@@ -87,15 +79,15 @@
         <div class="container">
             <div class="row center">
                 <figure class="4u 12u(xsmall)">
-                    <span class="percent">240%</span>
+                    <span class="percent"><span id="stat-one">0</span>%</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
                 </figure>
                 <figure class="4u 12u(xsmall)">
-                    <span class="percent">105%</span>
+                    <span class="percent"><span id="stat-two">0</span>%</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
                 </figure>
                 <figure class="4u 12u(xsmall)">
-                    <span class="percent">159%</span>
+                    <span class="percent"><span id="stat-three">0</span>%</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a cursus odio.</p>
                 </figure>
             </div>
@@ -132,9 +124,11 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript " src="src/vendor/skel.min.js "></script>
-    <script type="text/javascript " src="src/vendor/skel-layout.min.js "></script>
-    <script type="text/javascript " src="bundle.js "></script>
+    <script type="text/javascript " src="src/js/vendor/skel.min.js"></script>
+    <script type="text/javascript " src="src/js/vendor/skel-layout.min.js"></script>
+    <script type="text/javascript " src="src/js/vendor/slick.min.js"></script>
+
+    <script type="text/javascript " src="bundle.js"></script>
 </body>
 
 </html>

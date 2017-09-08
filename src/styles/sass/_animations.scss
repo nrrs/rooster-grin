@@ -26,6 +26,6 @@ button:before {
     transform: translate(-50%, -50%);
 }
 
-button:focus:not(:active)::before {
+button:focus:not(:active):not(.slick-arrow)::before {
     animation: ripple 1s ease-out;
 }
