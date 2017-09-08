@@ -34,6 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fade Checkers on load
     $('#checkers').animate({ 'opacity': '1' }, 1500);
 
+    // Modal Envelope
+    $('#mail').on('click', () => {
+        $('#overlay').show();
+    });
+
+    $('#overlay').on('click', () => {
+        $('#overlay').hide();
+    });
+
     // On scroll
     $(window).scroll(function() {
         $('#logo').animate({ 'background-position-x': '0%' }, 500);
@@ -41,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         $('.fadeIn').each(function(i) {
             const bottom = ($(this).position().top + $(this).outerHeight() / 3);
             const windowBottom = $(window).scrollTop() + $(window).height();
+            const windowTop = $(window).scrollTop();
             // If 1/3 of object is in the window, fade it in
             if (windowBottom > (bottom)) {
                 $(this).animate({ 'opacity': '1' }, 1000);
@@ -54,6 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     flag = false;
                 }
             }
+
+            // Sticky Envelope
+            if (windowTop >= 275) {
+                $('#mail').css({
+                    "position": "fixed",
+                    "top": "145px"
+                });
+            } else if (windowTop < 275) {
+                $('#mail').css({
+                    "position": "absolute",
+                    "top": "70%"
+                });
+            }
+
 
         });
     });
