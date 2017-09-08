@@ -157,7 +157,12 @@ div.tidbit {
 
 .showcase-text {
   box-sizing: border-box;
-  padding-left: 40px; }
+  padding: 0px 20px 0px 40px; }
+  .showcase-text h2 {
+    color: #F36819;
+    margin-bottom: 0px; }
+  .showcase-text h3 {
+    margin: 0; }
 
 div.tidbit2 {
   padding: 50px 100px;

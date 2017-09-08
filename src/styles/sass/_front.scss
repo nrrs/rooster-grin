@@ -76,7 +76,14 @@ div.tidbit {
 // Showcase
 .showcase-text {
     box-sizing: border-box;
-    padding-left: $var*4;
+    padding: 0px 20px 0px 40px;
+    h2 {
+        color: _palette(orange-dark);
+        margin-bottom: 0px;
+    }
+    h3 {
+        margin: 0;
+    }
 }
 
 // Thanks
