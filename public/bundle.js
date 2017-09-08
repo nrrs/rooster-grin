@@ -85,8 +85,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-console.log("butters");
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
