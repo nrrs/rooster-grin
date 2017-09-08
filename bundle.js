@@ -73,11 +73,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_main_css__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_main_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_skel_settings_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_skel_settings_js__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_skel_settings_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_skel_settings_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_slick_settings_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_slick_settings_js__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_slick_settings_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__js_slick_settings_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_script_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_script_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_script_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__js_script_js__);
 
 
@@ -108,7 +108,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(5)(content, options);
+var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -126,102 +126,12 @@ if(false) {
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__(4)(undefined);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);", ""]);
-
-// module
-exports.push([module.i, "@keyframes ripple {\n  0% {\n    opacity: 1;\n    transform: scale(0, 0); }\n  50% {\n    transform: scale(30, 30); }\n  100% {\n    opacity: 0;\n    transform: scale(90, 90); } }\n\nbutton:before {\n  content: '';\n  background: rgba(255, 255, 255, 0.35);\n  border-radius: 100%;\n  opacity: 0;\n  height: 10px;\n  width: 10px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%); }\n\nbutton:focus:not(:active):not(.slick-arrow)::before {\n  animation: ripple 1s ease-out; }\n\nbody {\n  background: #fafafa;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 14px;\n  line-height: 20px; }\n\nbody .band {\n  padding: 60px 0px; }\n\nh1, h2, h3, h4, h5, h6 {\n  overflow: auto;\n  line-height: initial; }\n\nfigure {\n  margin: 0px; }\n\nh2 {\n  font-size: 28px;\n  color: #283647;\n  font-weight: normal; }\n\nh2.title {\n  text-transform: uppercase;\n  margin: 60px auto; }\n\nh2.title strong {\n  color: #F36819; }\n\nh3 {\n  font-size: 20px;\n  color: #F7931D;\n  letter-spacing: 2px; }\n\nbutton {\n  background: linear-gradient(90deg, #F36819, #F7931D 50%, #FBC98E);\n  border: 0px;\n  border-radius: 5px;\n  box-shadow: 1px 1px 2px #666;\n  color: #fff;\n  cursor: pointer;\n  font-family: \"Roboto\", sans-serif;\n  font-size: 16px;\n  height: 40px;\n  letter-spacing: 2px;\n  line-height: 40px;\n  min-width: 215px;\n  overflow: hidden;\n  position: relative;\n  margin: 30px 0;\n  z-index: 998; }\n\n.center, h2.title {\n  text-align: center; }\n\n.fadeIn {\n  opacity: 0; }\n\n.slant:before {\n  display: block;\n  content: \" \";\n  width: 100%;\n  height: 100px;\n  background-color: #fff;\n  background: linear-gradient(4deg, #1676DD 50%, 50%, #fafafa); }\n\n@media (max-width: 736px) {\n  .reverse-col {\n    display: flex;\n    flex-direction: column-reverse; } }\n\n.top-bar {\n  height: 60px;\n  background: #1676DD;\n  overflow: hidden;\n  color: #fff;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n#logo {\n  text-align: center;\n  background: url(\"/src/images/igniter-logo-white.svg\") no-repeat 50% 50%;\n  text-indent: -999999px; }\n\n#checkers {\n  opacity: 0;\n  padding-bottom: 0px;\n  margin-top: 60px; }\n\nul.checkerboard {\n  display: flex;\n  flex-wrap: wrap;\n  margin: 0px;\n  padding: 0px;\n  list-style: none; }\n\nul.checkerboard li {\n  flex: 1 1 50%;\n  margin-bottom: 30px;\n  background: url(\"/src/images/page-icon.svg\");\n  background-repeat: no-repeat;\n  background-position: 0% 0%;\n  min-height: 60px;\n  padding: 0px 50px;\n  box-sizing: border-box; }\n\n@media (max-width: 480px) {\n  ul.checkerboard li {\n    flex: 1 1 100%;\n    padding: 0px 10px 0px 50px; } }\n\ndiv.tidbit {\n  padding: 100px 0px 50px;\n  background: url(\"/src/images/slanted-gradient-background.svg\");\n  background-size: cover;\n  font-size: 2em;\n  line-height: 1.2em;\n  color: #fff;\n  text-align: center; }\n\n#percents {\n  background: #fff; }\n\n#percents figure {\n  margin: 30px auto; }\n\n#percents p {\n  color: #F36819;\n  margin-bottom: 30px; }\n\n.percent {\n  font-weight: bold;\n  font-size: 55px;\n  letter-spacing: 2px;\n  line-height: initial; }\n\n.showcase-text {\n  box-sizing: border-box;\n  padding: 0px 20px 0px 40px; }\n\n.showcase-text h2 {\n  color: #F36819;\n  margin-bottom: 0px; }\n\n.showcase-text h3 {\n  margin: 0; }\n\ndiv.tidbit2 {\n  padding: 50px 100px;\n  background: linear-gradient(180deg, #1676DD, #0C4078);\n  font-size: 2em;\n  line-height: 1.2em;\n  color: #fff;\n  text-align: center; }\n\n#front-slider {\n  position: relative;\n  margin-top: 60px; }\n\n#front-slider .slide {\n  height: 509px;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n\n#front-slider .slide:after {\n  display: flex;\n  content: \" \";\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  background: linear-gradient(90deg, #F36819, #000);\n  opacity: 0.3; }\n\n#front-slider .slide .container {\n  display: block;\n  align-items: center;\n  margin-top: 10%;\n  position: absolute; }\n\n@media (max-width: 680px) {\n  #front-slider .slide .container {\n    flex-direction: column;\n    justify-content: center;\n    text-align: center; } }\n\n#front-slider .slide h2 {\n  position: relative;\n  font-weight: bold;\n  font-size: 48px;\n  color: #fff;\n  z-index: 998;\n  margin: 0px; }\n\nbutton.slick-arrow {\n  position: absolute;\n  background: transparent;\n  box-shadow: none;\n  height: 100%;\n  width: 50%;\n  margin: 0; }\n\nbutton.slick-arrow:hover {\n  background: rgba(255, 255, 255, 0.15); }\n\nbutton.slick-arrow.slick-prev {\n  left: 0;\n  text-align: left; }\n\nbutton.slick-arrow.slick-next {\n  right: 0;\n  text-align: right; }\n\nul.pagination {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  justify-content: center;\n  position: absolute;\n  bottom: -90px;\n  width: 100%; }\n\nul.pagination li {\n  margin: 10px; }\n\nul.pagination li button {\n  background: transparent;\n  min-width: 0px;\n  width: 10px;\n  height: 10px; }\n\nul.pagination li.slick-active button {\n  background: #283647; }\n", ""]);
-
-// exports
-
+throw new Error("Module build failed: Error: Missing binding /Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/node-sass/vendor/darwin-x64-57/binding.node\nNode Sass could not find a binding for your current environment: OS X 64-bit with Node.js 8.x\n\nFound bindings for the following environments:\n  - OS X 64-bit with Node.js 4.x\n  - OS X 64-bit with Node.js 6.x\n\nThis usually happens because your environment has changed since running `npm install`.\nRun `npm rebuild node-sass --force` to build the binding for your current environment.\n    at module.exports (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/node-sass/lib/binding.js:15:13)\n    at Object.<anonymous> (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/node-sass/lib/index.js:14:35)\n    at Module._compile (module.js:569:30)\n    at Object.Module._extensions..js (module.js:580:10)\n    at Module.load (module.js:503:32)\n    at tryModuleLoad (module.js:466:12)\n    at Function.Module._load (module.js:458:3)\n    at Module.require (module.js:513:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/sass-loader/lib/loader.js:3:14)\n    at Module._compile (module.js:569:30)\n    at Object.Module._extensions..js (module.js:580:10)\n    at Module.load (module.js:503:32)\n    at tryModuleLoad (module.js:466:12)\n    at Function.Module._load (module.js:458:3)\n    at Module.require (module.js:513:17)\n    at require (internal/module.js:11:18)\n    at loadLoader (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/loadLoader.js:13:17)\n    at iteratePitchingLoaders (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at iteratePitchingLoaders (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/LoaderRunner.js:165:10)\n    at /Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/LoaderRunner.js:173:18\n    at loadLoader (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/loadLoader.js:36:3)\n    at iteratePitchingLoaders (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/loader-runner/lib/LoaderRunner.js:362:2)\n    at NormalModule.doBuild (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/NormalModule.js:181:3)\n    at NormalModule.build (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/NormalModule.js:274:15)\n    at Compilation.buildModule (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/Compilation.js:149:10)\n    at factoryCallback (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/Compilation.js:337:12)\n    at factory (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/NormalModuleFactory.js:241:5)\n    at applyPluginsAsyncWaterfall (/Users/admin/Desktop/dev/rooster-grin/front-end-dev-test/node_modules/webpack/lib/NormalModuleFactory.js:94:13)");
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -267,7 +177,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(6);
+var	fixUrls = __webpack_require__(5);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -580,7 +490,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 
@@ -675,7 +585,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 // Skel Settings
@@ -706,7 +616,7 @@ skel.layout({
 });
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
  // Init Slick Carousel
@@ -722,7 +632,7 @@ skel.layout({
  });
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // Monkey Patch jQuery prototype
